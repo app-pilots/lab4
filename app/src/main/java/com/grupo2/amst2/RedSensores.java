@@ -103,8 +103,7 @@ public class RedSensores extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         System.out.println(response);
                         try {
-                            pesoValue.setText(response.getString("peso")+ "
-                                    g");
+                            pesoValue.setText(response.getString("peso")+ " g");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
