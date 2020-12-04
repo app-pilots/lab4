@@ -1,6 +1,7 @@
 package com.grupo2.amst2;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
@@ -38,11 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
     //IrMenuPrincipal desplaza la vista del teléfono entre actividades
 
-    public void irMenuPrincipal(View v){
+    public void irMenuPrincipal(View v) {
         Intent menuPrincipal = new Intent(getBaseContext(), menu.class);
         startActivity(menuPrincipal);
     }
-    private void iniciarSesion(String usuario, String password){
+
+    private void iniciarSesion(String usuario, String password) {
         Map<String, String> params = new HashMap();
         params.put("username", usuario);
         params.put("password", password);
@@ -87,5 +89,4 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-}
 

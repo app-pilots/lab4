@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.grupo2.amst2">
     <uses-permission android:name="android.permission.INTERNET" />
-    <?xml version="1.0" encoding="utf-8"?>
-
 
     <application
         android:allowBackup="true"

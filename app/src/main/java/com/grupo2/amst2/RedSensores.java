@@ -2,8 +2,6 @@ package com.grupo2.amst2;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -26,7 +24,7 @@ public class RedSensores extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_red_sensores);
+        setContentView(R.layout.red_sensores);
         mQueue = Volley.newRequestQueue(this);
         Intent login = getIntent();
         this.token = (String)login.getExtras().get("token");
@@ -103,8 +101,7 @@ public class RedSensores extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         System.out.println(response);
                         try {
-                            pesoValue.setText(response.getString("peso")+ "
-                                    g");
+                            pesoValue.setText(response.getString("peso")+ "g");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
